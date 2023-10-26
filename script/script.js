@@ -2,31 +2,31 @@ const canvas =document.getElementById('game')
 const ctx = canvas.getContext('2d')
 
 const ground = new Image();
-ground.src='field.png'
+ground.src='/image/field.png'
 
 const snowflake = new Image();
-snowflake.src='snow.png'
+snowflake.src='/image/snow.png'
 
 let man = new Image();
-man.src='man.png'
+man.src='/image/man.png'
 
 const moveup = new Image();
-moveup.src='moveup.png'
+moveup.src='/image/moveup.png'
 
 const moveleft = new Image();
-moveleft.src='moveleft.png'
+moveleft.src='/image/moveleft.png'
 
 const moveright = new Image();
-moveright.src='moveright.png'
+moveright.src='/image/moveright.png'
 
 let sprite = new Image();
-sprite.src='fire.png'
+sprite.src='/image/fire.png'
 
 let over =new Image();
-over.src='over.png'
+over.src='/image/over.png'
 
 let snowField =new Image();
-snowField.src='snowField.png'
+snowField.src='/image/snowField.png'
 
 
    
@@ -58,7 +58,7 @@ function direction(event){
      return
     }else{
      placeSnowX-=box
-     man.src='moveleft.png'
+     man.src='/image/moveleft.png'
     }
             
  }else  if(event.keyCode ==38){
@@ -66,21 +66,21 @@ function direction(event){
      return  
     }else{
      placeSnowY-=box
-     man.src='moveup.png'
+     man.src='/image/moveup.png'
     }
  }else  if(event.keyCode ==39){
     if(placeSnowX===512){
      return
     }else{
      placeSnowX+=box
-     man.src='moveright.png'
+     man.src='/image/moveright.png'
     }
  }else  if(event.keyCode ==40){
     if(placeSnowY===512){
         return
     }else{
      placeSnowY+=box
-     man.src='man.png'
+     man.src='/image/man.png'
     }
  }
 };
