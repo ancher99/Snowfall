@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnowFall</title>
+    <style>
+*{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+
+.main{
+position: relative;
+}
+
+.town{
+  position: relative;
+width: 100vw;
+height: 100vh;
+
+}
+.goal{
+  position: absolute;
+left: 63vw;
+top: 64vh;
+height: 50px;
+width: 50px;
+
+}
+
+button, p{
+position: absolute;
+top: 57vh;
+left: 50vw;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+display: inline-block;
+font-size: 20px;
+font-weight: 300;
+
+}
+
+
+.previous {
+padding: 10px 30px 10px 30px;
+border-radius: 10%;
+background-color: #f0d0a1;
+color: black;
+border: 2px solid rgb(0, 0, 0);
+    
+}
+   
+  </style>
+</head>
+<body>
+
+<div class="main">
+  <img  class="town" src="/SnowFall.png" alt="...">
+  <img class="goal"src="/free-icon-high-score-7960322.png" alt="">
+</div>
+
+
+<button class="previous" onclick="location.href='/play.html'">
+  Играть
+</button> 
+
+<p class="previous" onclick="location.href='/rules.html'" style="left: 50vw; top: 67vh;">
+ Правила
+</p> 
+
+
+
+
+<script>
+  document.addEventListener('click', e=>{
+  if(e.target.tagName  ==='BUTTON'){
+  let name=prompt('Введите ваше имя')
+  localStorage.setItem(name,'0')
+  }
+})
+
+document.addEventListener('click', mouse2Click)
+
+function mouse2Click (event) {
+  let mouse2={
+    x:0,
+    y:0
+  }
+ 
+   mouse2.x=event.clientX
+   mouse2.y=event.clientY
+  
+if(mouse2.x>1225 && mouse2.y>630 && mouse2.x<1285 && mouse2.y<676){
+  let text=''
+  for(let i=0; i<localStorage.length; i++) {
+  let key= localStorage.key(i);
+   text+=`${key}: ${localStorage.getItem(key)}
+`;
+   
+}
+alert(text)
+  
+}
+}
+</script>
+
+<script src="index.js"></script>
+</body>
+</html>
