@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  
+  
+  .main{
+  position: relative;
+  }
+  
+  .town{
+    position: relative;
+  width: 100vw;
+  height: 100vh;
+  
+  }
+  .goal{
+    position: absolute;
+  left: 63vw;
+  top: 64vh;
+  height: 50px;
+  width: 50px;
+  
+  }
+  
+  button, p{
+  position: absolute;
+  top: 57vh;
+  left: 50vw;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  
+  }
+  
+  
+  .previous {
+  padding: 10px 30px 10px 30px;
+  border-radius: 10%;
+  background-color: #f0d0a1;
+  color: black;
+  border: 2px solid rgb(0, 0, 0);
+      
+  }
