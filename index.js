@@ -12,7 +12,7 @@ const route =() =>{
     handleLocation();
 }
 const routers={
-    '/':'Main.html',
+    '/':'index.html',
     '/play':'play.html',
     '/rules':'rules.html'
 }
