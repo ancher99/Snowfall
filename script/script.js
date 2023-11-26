@@ -2,31 +2,31 @@ const canvas =document.getElementById('game')
 const ctx = canvas.getContext('2d')
 
 const ground = new Image();
-ground.src='/image/field.png'
+ground.src='../image/field.png'
 
 const snowflake = new Image();
-snowflake.src='/image/snow.png'
+snowflake.src='../image/snow.png'
 
 let man = new Image();
-man.src='/image/man.png'
+man.src='../image/man.png'
 
 const moveup = new Image();
-moveup.src='/image/moveup.png'
+moveup.src='../image/moveup.png'
 
 const moveleft = new Image();
-moveleft.src='/image/moveleft.png'
+moveleft.src='../image/moveleft.png'
 
 const moveright = new Image();
-moveright.src='/image/moveright.png'
+moveright.src='../image/moveright.png'
 
 let sprite = new Image();
-sprite.src='/image/fire.png'
+sprite.src='../image/fire.png'
 
 let over =new Image();
-over.src='/image/over.png'
+over.src='../image/over.png'
 
 let snowField =new Image();
-snowField.src='/image/snowField.png'
+snowField.src='../image/snowField.png'
 
 
    
