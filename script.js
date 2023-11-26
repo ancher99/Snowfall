@@ -58,7 +58,7 @@ function direction(event){
      return
     }else{
      placeSnowX-=box
-     man.src='/image/moveleft.png'
+     man.src='image/moveleft.png'
     }
             
  }else  if(event.keyCode ==38){
@@ -66,21 +66,21 @@ function direction(event){
      return  
     }else{
      placeSnowY-=box
-     man.src='/image/moveup.png'
+     man.src='image/moveup.png'
     }
  }else  if(event.keyCode ==39){
     if(placeSnowX===512){
      return
     }else{
      placeSnowX+=box
-     man.src='/image/moveright.png'
+     man.src='image/moveright.png'
     }
  }else  if(event.keyCode ==40){
     if(placeSnowY===512){
         return
     }else{
      placeSnowY+=box
-     man.src='/image/man.png'
+     man.src='image/man.png'
     }
  }
 };
